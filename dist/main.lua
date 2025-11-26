@@ -4297,6 +4297,14 @@ am.Size=UDim2.new(0,am.AbsoluteSize.X,0,aq.Size)
 elseif typeof(aq.Size)=="UDim2" then
 am.Size=aq.Size
 am.AutomaticSize=Enum.AutomaticSize.None
+al.Size=aq.Size
+am.TextButton.Size=UDim2.new(1,-44,1,0)
+am.TextButton.AutomaticSize=Enum.AutomaticSize.None
+ai.Size=UDim2.new(1,0,1,0)
+ai.AutomaticSize=Enum.AutomaticSize.None
+ai.TextTruncate=Enum.TextTruncate.AtEnd
+ai.TextScaled=false
+ai.TextWrapped=false
 end
 end
 
