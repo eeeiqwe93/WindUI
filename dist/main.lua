@@ -4288,7 +4288,17 @@ CornerRadius=ap.CornerRadius or UDim.new(1,0),
 StrokeThickness=ap.StrokeThickness or 2,
 Color=ap.Color
 or ColorSequence.new(Color3.fromHex"40c9ff",Color3.fromHex"e81cff"),
+Size=ap.Size,
 }
+
+if aq.Size then
+if typeof(aq.Size)=="number" then
+am.Size=UDim2.new(0,am.AbsoluteSize.X,0,aq.Size)
+elseif typeof(aq.Size)=="UDim2" then
+am.Size=aq.Size
+am.AutomaticSize=Enum.AutomaticSize.None
+end
+end
 
 
 
